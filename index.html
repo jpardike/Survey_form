@@ -14,13 +14,13 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col p-4  text-light">
                 <h1>Guitar purchase survey</h1>
                 <p>Please complete this survey as part of your purchase</p>
             </div>
         </div>
         <div class="row">
-            <div class="col" id="form">
+            <div class="col p-4 text-light shadow-lg" id="form">
                 <form>
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -49,6 +49,24 @@
                                 <option>Jimi Hendrix</option>
                         </select>
                     </div>
+                    <div class="form-group">
+                        <label for="Rateing">Rate Purchase</label>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="float-right">0<i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="col-10">
+                                    <input type="range" class="custom-range" min="0" max="5" id="Rateing">
+                                </div>
+                                <div class="col">
+                                    <span class="float-left">5<i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comments and Suggestions</label>
+                        <textarea class="form-control" id="comments" rows="4"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
@@ -56,6 +74,7 @@
     </div>
     
     </div>
+    <script src="https://kit.fontawesome.com/3172b972c7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

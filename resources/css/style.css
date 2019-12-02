@@ -1,14 +1,11 @@
 body,
 html {
-    height: 100%;    
-}
-
-.bg {
     background-image: url("../images/photo-of-guitar-headstock-1201112_85.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;    
 }
 
 #form {

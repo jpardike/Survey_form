@@ -10,8 +10,7 @@
     <title></title>
   </head>
   <body>
-    <div class="bg">
-
+        
     <div class="container">
         <div class="row">
             <div class="col p-4  text-light">
@@ -50,16 +49,16 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="Rateing">Rate Purchase</label>
+                        <label for="rateing">Rate Purchase</label>
                             <div class="row">
                                 <div class="col">
-                                    <span class="float-right">0<i class="fas fa-star"></i></span>
+                                    <span class="float-right">0 <i class="fas fa-star"></i></span>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-6 col-sm-9">
                                     <input type="range" class="custom-range" min="0" max="5" id="Rateing">
                                 </div>
                                 <div class="col">
-                                    <span class="float-left">5<i class="fas fa-star"></i></span>
+                                    <span class="float-left">5 <i class="fas fa-star"></i></span>
                                 </div>
                             </div>
                     </div>
@@ -67,16 +66,32 @@
                         <label for="comments">Comments and Suggestions</label>
                         <textarea class="form-control" id="comments" rows="4"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">Submit</button>
+                    <div class="modal fade" id="submitModal" role="dialog">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="submitModalLabel">Thank You!</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for your purchase and thank you for taking the time to fill out our survey. We hope you enjoy your new guitar!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                 </form>
             </div>
         </div>
     </div>
     
-    </div>
+    
     <script src="https://kit.fontawesome.com/3172b972c7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
